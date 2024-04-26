@@ -1,0 +1,185 @@
+/* Designing phase */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+*{
+  font-family: 'Iter', sans-serif;
+  text-transform: none;
+}
+p{
+  margin: 0;
+}
+body {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+a:active {
+  transform: scale(0.98);
+}
+
+body>h1{
+  padding: 10px 10px;
+  text-transform: uppercase;
+  
+}
+
+.container{
+  width: 100vw;
+}
+
+.switch {
+  width: 70%;
+  max-width: 700px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  margin: 0 0 30px   0 ;
+  flex-shrink: 0;
+
+}
+
+.category {
+  height: 100%;
+  width: 33.33%;
+  border-radius: 6px;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  
+  
+}
+.category:hover {
+  background-color: #e3e2e2;
+}
+.switch img{
+  display: none;
+}
+
+.switch > .selected {
+  background-color: #000;
+  color: white;
+}
+
+
+.switch > .selected > img{
+  display: block;
+}
+
+.image-container{
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+}
+.image-container>.badge{
+  position: absolute;
+  background-color : #fff;
+  padding: 10px 16px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin: 6px;
+}
+.image-container>img{
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.price-tab{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title{
+  display: flex;
+  justify-content: start;
+  gap: 6px;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card>button{
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+
+}
+#card-display{
+  margin: 20px 20px;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center
+}
+.name{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.brand{
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: small;
+
+}
+
+.original{
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.discount{
+  color: red;
+}
+
